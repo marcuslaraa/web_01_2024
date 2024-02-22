@@ -1,7 +1,7 @@
 /*
 
 Exercício:
-Considere um sistema de cadastro de usuários onde precisamos armazenar informações sobre os usuários. 
+Considere um sistema de cadastro de usuários onde precisamos armazenar informações sobre os usuários.
 Vamos criar variáveis e objetos para representar diferentes tipos de dados relacionados a um usuário.
 
 1- Crie as seguintes variáveis primitivas:
@@ -11,14 +11,11 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     isAtivo: do tipo boolean, representando se o usuário está ativo ou não.
     
     */
-    
-    // let nomeCompleto : string;
-    // let idade : number;
-    // let email : string;
-    // let isAtivo : boolean;
-
-
-/* 
+// let nomeCompleto : string;
+// let idade : number;
+// let email : string;
+// let isAtivo : boolean;
+/*
    2 -Crie um objeto usuario com as seguintes propriedades:
 
     nome: string, representando o primeiro nome do usuário.
@@ -30,29 +27,13 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     Em seguida, imprima todas as variáveis e propriedades do objeto usuario usando console.log.
 
 */
-
-type usuario = {
-    nome: string;
-    sobrenome : string;
-    idade : number;
-}
-
-type contato = usuario & {
-    email : string;
-    telefone : string;
-}
-
-let usuario1 : usuario = {
-    nome: 'marcus',
-    sobrenome: 'lara',
-    idade: 29,
-    email: 'marcus.lara@hotmail.com',
-    telefone: '15996663288'
-};
+var usuario;
+usuario = { nome: 'marcus', sobrenome: 'lara', idade: 29, contato: { email: 'marcus.lara@hotmail.com', telefone: "15996663288" } };
+console.log(usuario);
 /*
 
 Exercício:
-Vamos criar um sistema de gestão de produtos para uma loja online. 
+Vamos criar um sistema de gestão de produtos para uma loja online.
 Precisamos armazenar informações sobre diferentes produtos disponíveis na loja. Vamos criar variáveis e objetos para representar esses produtos.
 
 01 - Crie as seguintes variáveis primitivas:
@@ -70,4 +51,4 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     categorias: array de strings, representando as categorias às quais o produto pertence.
     Em seguida, imprima todas as variáveis e propriedades do objeto produto usando console.log.
 
-*/
+*/ 
