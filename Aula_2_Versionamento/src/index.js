@@ -11,25 +11,15 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     isAtivo: do tipo boolean, representando se o usuário está ativo ou não.
     
     */
-// let nomeCompleto : string;
-// let idade : number;
-// let email : string;
-// let isAtivo : boolean;
-/*
-   2 -Crie um objeto usuario com as seguintes propriedades:
-
-    nome: string, representando o primeiro nome do usuário.
-    sobrenome: string, representando o sobrenome do usuário.
-    idade: number, representando a idade do usuário.
-    contato: objeto com as seguintes propriedades:
-    email: string, representando o endereço de e-mail do usuário.
-    telefone: string, representando o número de telefone do usuário (opcional).
-    Em seguida, imprima todas as variáveis e propriedades do objeto usuario usando console.log.
-
-*/
-var usuario;
-usuario = { nome: 'marcus', sobrenome: 'lara', idade: 29, contato: { email: 'marcus.lara@hotmail.com', telefone: "15996663288" } };
+var usuario = {
+    nome: 'marcus',
+    sobrenome: 'lara',
+    idade: 29,
+    email: 'marcus.lara@hotmail.com',
+    telefone: '15996663288'
+};
 console.log(usuario);
+// --------------------------------------------------------------------------
 /*
 
 Exercício:
@@ -42,13 +32,14 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     preco: do tipo number, representando o preço do produto.
     disponivel: do tipo boolean, representando se o produto está disponível em estoque ou não.
 
-
-02 - Crie um objeto produto com as seguintes propriedades:
-
-    nome: string, representando o nome do produto.
-    preco: number, representando o preço do produto.
-    estoque: number, representando a quantidade em estoque do produto.
-    categorias: array de strings, representando as categorias às quais o produto pertence.
-    Em seguida, imprima todas as variáveis e propriedades do objeto produto usando console.log.
-
-*/ 
+*/
+var nomeProduto = 'TV';
+var preco = 2500.00;
+var disponivel = true;
+var produto1 = {
+    nome: 'Tv',
+    preco: 2500.00,
+    estoque: 10,
+    categorias: ['Eletrodomestico']
+};
+console.log(produto1);
