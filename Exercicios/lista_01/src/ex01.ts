@@ -1,7 +1,6 @@
-function maiorValor(lista : number[]) {
+function maiorValor(...lista : number[]):number {
     let maior : number = 0;
-    let i : number;
-    for(i = 0; i < lista.length; i++) {
+    for(let i = 0; i < lista.length; i++) {
         if(lista[i] > maior) {
             maior = lista[i];
         }
@@ -10,4 +9,4 @@ function maiorValor(lista : number[]) {
     return maior;
 }
 
-console.log(maiorValor([10,5,25,35,68,16]));
+console.log(maiorValor(10,5,25,35,68,16));
