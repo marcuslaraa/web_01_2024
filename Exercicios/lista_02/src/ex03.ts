@@ -46,9 +46,11 @@ function verificaSegundoDigito(cpf:number[]) : boolean {
 function validaCPF(cpf:number[]) : boolean {
     
 
-    if(verificaPrimeiroDigito(cpf) && verificaSegundoDigito(cpf)) {
-        return true;
-    }
+    if(verificaPrimeiroDigito(cpf)) {
+        if(verificaSegundoDigito(cpf)) {
+            return true;
+        }
+    } 
 
     return false;
 }
