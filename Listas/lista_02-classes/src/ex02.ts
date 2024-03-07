@@ -49,3 +49,11 @@ class Calculadora {
     }
 
 }
+
+let calculadora : Calculadora = new Calculadora(15,5);
+
+console.log(calculadora.somar());
+console.log(calculadora.subtrair());
+console.log(calculadora.multiplicar());
+console.log(calculadora.dividir());
+console.log(calculadora.calcularPorcentagem());

@@ -35,3 +35,9 @@ class Calculadora {
         return (this._valor1 / this._valor2) * 100;
     }
 }
+let calculadora = new Calculadora(15, 5);
+console.log(calculadora.somar());
+console.log(calculadora.subtrair());
+console.log(calculadora.multiplicar());
+console.log(calculadora.dividir());
+console.log(calculadora.calcularPorcentagem());
